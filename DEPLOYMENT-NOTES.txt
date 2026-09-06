@@ -1,0 +1,8 @@
+FINAL DEPLOYMENT NOTES
+
+1) Upload index-material3-phd-APPLICATION-FINAL.html and all sibling assets to the same web root.
+2) The canonical URL is intentionally root-relative (<link rel="canonical" href="/">) so it is valid on any final domain without JavaScript.
+3) Open Graph image is /og-image.jpg. For maximum social-sharing compatibility, once the final domain is known, add an absolute og:url and convert og:image/twitter:image to the absolute HTTPS URL of /og-image.jpg.
+4) robots.txt is domain-independent and safe to deploy. Generate sitemap.xml only after the production HTTPS URL is known because sitemap <loc> values must be absolute.
+5) The page references `CV - Mohammad Yazdani.pdf`. Place the real PDF beside index.html before publishing; it was not present in the supplied files, so it was not fabricated.
+6) After deployment, run Google Search Console URL Inspection and a Lighthouse audit on the live HTTPS URL.
