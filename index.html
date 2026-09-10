@@ -221,6 +221,28 @@ main{min-width:0;padding:32px 0 96px}
 .edu-thesis{color:var(--on-surface-variant);margin-top:8px;font-style:italic}
 .spec-row{grid-template-columns:140px 1fr;align-items:start}.spec-key{font-family:var(--font-mono);font-size:11px;color:var(--on-surface-variant);padding-top:2px;text-transform:lowercase}.spec-val{color:var(--on-surface)}
 
+.transcript-degree{margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--outline-variant)}
+.transcript-degree:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.transcript-degree-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+.transcript-school{color:var(--on-surface-variant);margin-top:4px}
+.semester{margin-top:32px}
+.semester-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
+.semester-head .title-sm{color:var(--primary)}
+.semester-head .meta{font-family:var(--font-mono);font-size:11px;color:var(--on-surface-variant)}
+.table-scroll{overflow-x:auto;border-radius:var(--shape-md)}
+.course-table{width:100%;min-width:480px;border-collapse:collapse;font-size:.875rem}
+.course-table th{text-align:left;padding:8px 12px;color:var(--on-surface-variant);font:500 .6875rem var(--font-mono);text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--outline-variant);white-space:nowrap}
+.course-table td{padding:10px 12px;border-bottom:1px solid var(--outline-variant);color:var(--on-surface)}
+.course-table tbody tr:last-child td{border-bottom:1px solid var(--outline-variant)}
+.course-table td.num,.course-table th.num{text-align:right;font-family:var(--font-mono);white-space:nowrap}
+.cumulative{margin-top:24px;padding:16px 20px;background:var(--surface-container-low);border-radius:var(--shape-lg);display:flex;flex-wrap:wrap;gap:32px}
+.cumulative div{display:flex;flex-direction:column;gap:4px}
+.cum-label{font:500 .6875rem var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--on-surface-variant)}
+.cum-val{font:500 1.1rem var(--font-text)}
+.transcript-notes{margin-top:16px;display:grid;gap:6px}
+.transcript-notes p{color:var(--on-surface-variant);font-style:italic}
+@media (max-width:839px){.course-table{min-width:420px}}
+
 .pub-group{margin-bottom:36px}.pub-group:last-child{margin-bottom:0}
 .pub-group h3{text-transform:uppercase;letter-spacing:.08em;color:var(--on-surface-variant);margin-bottom:12px}
 .pub-list{display:grid}
@@ -333,8 +355,9 @@ footer{border-top:1px solid var(--outline-variant);padding-top:16px;margin-top:6
     <a href="#research-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">science</span><span>Research experience</span></a>
     <a href="#publications" class="state"><span class="material-symbols-outlined" aria-hidden="true">article</span><span>Publications</span></a>
     <a href="#education" class="state"><span class="material-symbols-outlined" aria-hidden="true">school</span><span>Education</span></a>
+    <a href="#academic-transcript" class="state"><span class="material-symbols-outlined" aria-hidden="true">history_edu</span><span>Academic transcript</span></a>
     <a href="#teaching" class="state"><span class="material-symbols-outlined" aria-hidden="true">co_present</span><span>Teaching</span></a>
-    <a href="#industry-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">factory</span><span>Industry experience</span></a>
+    <a href="#industry-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span><span>Industry experience</span></a>
     <a href="#projects" class="state"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span><span>Projects</span></a>
     <a href="#skills" class="state"><span class="material-symbols-outlined" aria-hidden="true">tune</span><span>Technical skills</span></a>
     <a href="#certifications" class="state"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span><span>Certifications</span></a>
@@ -406,6 +429,162 @@ footer{border-top:1px solid var(--outline-variant);padding-top:16px;margin-top:6
     <article class="list-row"><div class="edu-head"><div><div class="title-md">B.Sc., Chemical Engineering</div><div class="edu-school body-md"><a href="https://www.topuniversities.com/universities/iran-university-science-technology" target="_blank" rel="noopener">Iran University of Science and Technology</a> · Tehran, Iran · Sep 2019 — Sep 2023</div></div><div class="edu-gpa">GPA 3.64/4.00</div></div><div class="edu-thesis body-md">Thesis: From Model to Market: A Feasibility Study of Acrylic Ester Production</div></article>
   </div></section>
 
+  <section class="section reveal" id="academic-transcript">
+    <div class="section-head"><h2 class="headline">Academic transcript</h2><span class="meta">02</span></div>
+
+    <div class="transcript-degree">
+      <div class="transcript-degree-head"><div><div class="title-lg">M.Sc., Chemical Engineering, Process Design</div><div class="transcript-school body-md">University of Tehran · Tehran, Iran · Sep 2023 — Present</div></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">1st Semester — Fall 2023</span><span class="meta">Credits: 9</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Advanced Chemical Thermodynamics</td><td class="num">3</td><td class="num">17.58</td><td class="num">4.0</td></tr>
+          <tr><td>Advanced Engineering Mathematics</td><td class="num">3</td><td class="num">17.25</td><td class="num">4.0</td></tr>
+          <tr><td>Advanced Adsorption Processes</td><td class="num">3</td><td class="num">16.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">2nd Semester — Spring 2024</span><span class="meta">Credits: 9</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Advanced Kinetics and Reaction Engineering</td><td class="num">3</td><td class="num">16.00</td><td class="num">4.0</td></tr>
+          <tr><td>Advanced Fluid Mechanics</td><td class="num">3</td><td class="num">13.20</td><td class="num">2.0</td></tr>
+          <tr><td>Mixing Process</td><td class="num">3</td><td class="num">15.50</td><td class="num">3.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">3rd Semester — Fall 2024</span><span class="meta">Credits: 8</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Advanced Mass Transfer</td><td class="num">3</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Seminar</td><td class="num">2</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+          <tr><td>Computer Aided Advanced Process Simulation</td><td class="num">3</td><td class="num">17.93</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="cumulative">
+        <div><span class="cum-label">Total credits completed</span><span class="cum-val">26</span></div>
+        <div><span class="cum-label">Average (/20)</span><span class="cum-val">16.75</span></div>
+        <div><span class="cum-label">Cumulative GPA (/4.0)</span><span class="cum-val">3.65</span></div>
+      </div>
+
+      <div class="transcript-notes body-sm">
+        <p>1. This record was retrieved directly from the university's student portal. Official, sealed transcripts are available upon request or offer of admission.</p>
+        <p>2. Grades are reported on the Iranian 0–20 scale and converted to the U.S. 4.0 scale as follows: 16–20 = 4.0; 14–15.99 = 3.0; 12–13.99 = 2.0; 10–11.99 = 1.0; below 10 = 0.0.</p>
+        <p>3. The 4th, 5th, and 6th semesters (Spring 2025 – Spring 2026) were dedicated entirely to Master's thesis research, during which no additional coursework was registered. The thesis defense is estimated to take place by the end of September 2026.</p>
+      </div>
+    </div>
+
+    <div class="transcript-degree">
+      <div class="transcript-degree-head"><div><div class="title-lg">B.Sc., Chemical Engineering</div><div class="transcript-school body-md">Iran University of Science and Technology · Tehran, Iran · Sep 2019 — Sep 2023</div></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">1st Semester — Fall 2019</span><span class="meta">Credits: 16</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>General Mathematics 1</td><td class="num">3</td><td class="num">13.25</td><td class="num">2.0</td></tr>
+          <tr><td>Physics 1</td><td class="num">3</td><td class="num">13.00</td><td class="num">2.0</td></tr>
+          <tr><td>Introduction to Chemical Engineering</td><td class="num">2</td><td class="num">14.50</td><td class="num">3.0</td></tr>
+          <tr><td>General Chemistry for Chemical Engineering</td><td class="num">3</td><td class="num">17.00</td><td class="num">4.0</td></tr>
+          <tr><td>Persian Literature</td><td class="num">3</td><td class="num">14.00</td><td class="num">3.0</td></tr>
+          <tr><td>Islamic Revolution of Iran</td><td class="num">2</td><td class="num">18.50</td><td class="num">4.0</td></tr>
+          <tr><td>Introduction to the Field &amp; Student Skills</td><td class="num">0</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">2nd Semester — Spring 2020</span><span class="meta">Credits: 18</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Differential Equations</td><td class="num">3</td><td class="num">17.50</td><td class="num">4.0</td></tr>
+          <tr><td>General Mathematics 2</td><td class="num">3</td><td class="num">16.00</td><td class="num">4.0</td></tr>
+          <tr><td>Industrial Drawing</td><td class="num">2</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Energy and Material Balances</td><td class="num">4</td><td class="num">15.50</td><td class="num">3.0</td></tr>
+          <tr><td>Statics and Strength of Materials</td><td class="num">3</td><td class="num">17.34</td><td class="num">4.0</td></tr>
+          <tr><td>English Literature</td><td class="num">3</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">3rd Semester — Fall 2020</span><span class="meta">Credits: 18</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Engineering Mathematics</td><td class="num">3</td><td class="num">16.00</td><td class="num">4.0</td></tr>
+          <tr><td>Chemical Engineering Thermodynamics 1</td><td class="num">3</td><td class="num">16.58</td><td class="num">4.0</td></tr>
+          <tr><td>Fluid Mechanics 1</td><td class="num">3</td><td class="num">15.25</td><td class="num">3.0</td></tr>
+          <tr><td>Analytical Chemistry</td><td class="num">3</td><td class="num">19.70</td><td class="num">4.0</td></tr>
+          <tr><td>General Chemistry Laboratory</td><td class="num">1</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Family and Population Studies</td><td class="num">2</td><td class="num">15.00</td><td class="num">3.0</td></tr>
+          <tr><td>Thematic Interpretation of the Quran</td><td class="num">2</td><td class="num">17.50</td><td class="num">4.0</td></tr>
+          <tr><td>Physical Education 1</td><td class="num">1</td><td class="num">17.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">4th Semester — Spring 2021</span><span class="meta">Credits: 18</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Physics 2</td><td class="num">3</td><td class="num">18.25</td><td class="num">4.0</td></tr>
+          <tr><td>Chemical Engineering Thermodynamics 2</td><td class="num">3</td><td class="num">16.86</td><td class="num">4.0</td></tr>
+          <tr><td>Heat Transfer 1</td><td class="num">3</td><td class="num">17.00</td><td class="num">4.0</td></tr>
+          <tr><td>Fundamentals of Computer Programming</td><td class="num">3</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Islamic Thought 1</td><td class="num">2</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Organic Chemistry for Chemical Engineering</td><td class="num">3</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Analytical Chemistry Laboratory</td><td class="num">1</td><td class="num">15.80</td><td class="num">3.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">5th Semester — Fall 2021</span><span class="meta">Credits: 18</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Numerical Computations</td><td class="num">2</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Physics Laboratory 1</td><td class="num">1</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Physical Chemistry for Chemical Engineering</td><td class="num">3</td><td class="num">18.18</td><td class="num">4.0</td></tr>
+          <tr><td>Fluid Mechanics 2</td><td class="num">2</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+          <tr><td>Heat Transfer 2</td><td class="num">3</td><td class="num">15.80</td><td class="num">3.0</td></tr>
+          <tr><td>Mass Transfer</td><td class="num">3</td><td class="num">16.10</td><td class="num">4.0</td></tr>
+          <tr><td>Engineering Software Workshop</td><td class="num">1</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Islamic Thought 2</td><td class="num">2</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Organic Chemistry Laboratory</td><td class="num">1</td><td class="num">18.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">Summer Semester — 2022</span><span class="meta">Credits: 0</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Internship</td><td class="num">0</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">6th Semester — Spring 2022</span><span class="meta">Credits: 13</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Physics Laboratory 2</td><td class="num">1</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Unit Operations 1</td><td class="num">3</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Reaction Kinetics and Reactor Design</td><td class="num">4</td><td class="num">14.50</td><td class="num">3.0</td></tr>
+          <tr><td>Equipment Specification and Selection</td><td class="num">3</td><td class="num">17.46</td><td class="num">4.0</td></tr>
+          <tr><td>Environmental Engineering</td><td class="num">2</td><td class="num">13.25</td><td class="num">2.0</td></tr>
+          <tr><td>Analytical History of Early Islam</td><td class="num">2</td><td class="num">18.50</td><td class="num">4.0</td></tr>
+          <tr><td>Physical Education 2</td><td class="num">2</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Physical Chemistry Laboratory</td><td class="num">1</td><td class="num">18.50</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">7th Semester — Fall 2022</span><span class="meta">Credits: 14</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>Oil Refining Processes</td><td class="num">2</td><td class="num">14.25</td><td class="num">3.0</td></tr>
+          <tr><td>Polymer Processes</td><td class="num">2</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+          <tr><td>Unit Operations 2</td><td class="num">3</td><td class="num">14.25</td><td class="num">3.0</td></tr>
+          <tr><td>Applications of Mathematics in Chemical Engineering</td><td class="num">3</td><td class="num">20.00</td><td class="num">4.0</td></tr>
+          <tr><td>Heat Transfer Laboratory</td><td class="num">1</td><td class="num">17.33</td><td class="num">4.0</td></tr>
+          <tr><td>Fluid Mechanics Laboratory 1</td><td class="num">1</td><td class="num">19.50</td><td class="num">4.0</td></tr>
+          <tr><td>Entrepreneurship</td><td class="num">2</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="semester"><div class="semester-head"><span class="title-sm">8th Semester — Spring 2023</span><span class="meta">Credits: 21</span></div>
+        <div class="table-scroll"><table class="course-table"><thead><tr><th>Course</th><th class="num">Credits</th><th class="num">Grade (/20)</th><th class="num">GPA (/4.0)</th></tr></thead><tbody>
+          <tr><td>General Workshop</td><td class="num">1</td><td class="num">18.50</td><td class="num">4.0</td></tr>
+          <tr><td>Gas Processing</td><td class="num">2</td><td class="num">14.80</td><td class="num">3.0</td></tr>
+          <tr><td>Petrochemical Processes</td><td class="num">2</td><td class="num">17.94</td><td class="num">4.0</td></tr>
+          <tr><td>Chemical Engineering Software Workshop</td><td class="num">1</td><td class="num">18.20</td><td class="num">4.0</td></tr>
+          <tr><td>Plant Design and Economics</td><td class="num">3</td><td class="num">15.70</td><td class="num">4.0</td></tr>
+          <tr><td>New Processes in Chemical Engineering</td><td class="num">2</td><td class="num">16.00</td><td class="num">4.0</td></tr>
+          <tr><td>Mineral Processing</td><td class="num">2</td><td class="num">16.68</td><td class="num">4.0</td></tr>
+          <tr><td>Unit Operations Laboratory</td><td class="num">1</td><td class="num">15.00</td><td class="num">4.0</td></tr>
+          <tr><td>Process Control Laboratory</td><td class="num">1</td><td class="num">17.93</td><td class="num">4.0</td></tr>
+          <tr><td>Process Control</td><td class="num">3</td><td class="num">14.80</td><td class="num">3.0</td></tr>
+          <tr><td>Final Project</td><td class="num">3</td><td class="num">19.00</td><td class="num">4.0</td></tr>
+        </tbody></table></div></div>
+
+      <div class="cumulative">
+        <div><span class="cum-label">Total credits completed</span><span class="cum-val">141</span></div>
+        <div><span class="cum-label">Average (/20)</span><span class="cum-val">17.12</span></div>
+        <div><span class="cum-label">Cumulative GPA (/4.0)</span><span class="cum-val">3.63</span></div>
+      </div>
+
+      <div class="transcript-notes body-sm">
+        <p>1. This record was retrieved directly from the university's student portal. Official, sealed transcripts are available upon request or offer of admission.</p>
+        <p>2. Grades are reported on the Iranian 0–20 scale and converted to the U.S. 4.0 scale as follows: 16–20 = 4.0; 14–15.99 = 3.0; 12–13.99 = 2.0; 10–11.99 = 1.0; below 10 = 0.0.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section reveal" id="teaching"><div class="section-head"><h2 class="headline">Teaching experience</h2><span class="meta">02</span></div><div class="timeline">
     <article class="t-item"><div class="t-head"><div><div class="title-md">Teaching Assistant — Advanced Adsorption Processes</div><div class="t-org body-md">University of Tehran · Tehran, Iran</div></div><div class="t-date">Oct 2025 — Feb 2026</div></div><ul><li>Assisted in teaching advanced adsorption processes by mentoring students in adsorption theory, process modeling, and simulation concepts.</li><li>Developed and delivered hands-on Aspen Adsorption workshops covering process model development, cycle simulation, and performance evaluation.</li></ul></article>
     <article class="t-item"><div class="t-head"><div><div class="title-md">Teaching Assistant — Advanced Engineering Mathematics</div><div class="t-org body-md">University of Tehran · Tehran, Iran</div></div><div class="t-date">Oct 2024 — Feb 2025</div></div><ul><li>Assisted in delivering tutorials and mentoring students in advanced engineering mathematics, guiding analytical and numerical solution methods.</li><li>Developed and delivered hands-on MATLAB workshops covering numerical methods, mathematical modeling, and engineering problem solving.</li></ul></article>
@@ -457,8 +636,9 @@ footer{border-top:1px solid var(--outline-variant);padding-top:16px;margin-top:6
       <a href="#research-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">science</span><span>Research experience</span></a>
       <a href="#publications" class="state"><span class="material-symbols-outlined" aria-hidden="true">article</span><span>Publications</span></a>
       <a href="#education" class="state"><span class="material-symbols-outlined" aria-hidden="true">school</span><span>Education</span></a>
+      <a href="#academic-transcript" class="state"><span class="material-symbols-outlined" aria-hidden="true">history_edu</span><span>Academic transcript</span></a>
       <a href="#teaching" class="state"><span class="material-symbols-outlined" aria-hidden="true">co_present</span><span>Teaching</span></a>
-      <a href="#industry-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">factory</span><span>Industry experience</span></a>
+      <a href="#industry-experience" class="state"><span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span><span>Industry experience</span></a>
       <a href="#projects" class="state"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span><span>Projects</span></a>
       <a href="#skills" class="state"><span class="material-symbols-outlined" aria-hidden="true">tune</span><span>Technical skills</span></a>
       <a href="#certifications" class="state"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span><span>Certifications</span></a>
